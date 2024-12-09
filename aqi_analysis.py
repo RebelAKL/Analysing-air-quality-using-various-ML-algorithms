@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 
 
-data = pd.read_csv('your_data.csv')
+data = pd.read_csv("G:\\Projects\\aqi_forecasting\\Data\\ananadvihar(8hr).csv")
 
 
 data.fillna(method='ffill', inplace=True)
@@ -32,13 +32,25 @@ joblib.dump(model, 'models/aqi_forecasting_model.pkl')
 
 
 from pmdarima import auto_arima
+import joblib
+
 
 features = ['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'SO2', 'CO', 'Ozone', 'WS', 'Temp']
+
+
 feature_forecasters = {}
+
 
 for feature in features:
     print(f"Training model for {feature}...")
+    
+    
     forecaster = auto_arima(data[feature], seasonal=True, m=7)  
+
+    
     feature_forecasters[feature] = forecaster
 
+
 joblib.dump(feature_forecasters, 'models/feature_forecaster.pkl')
+
+print("Time-series forecasting models have been trained and saved.")
