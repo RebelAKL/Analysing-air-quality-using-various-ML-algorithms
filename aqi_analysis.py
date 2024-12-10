@@ -34,7 +34,7 @@ joblib.dump(model, 'models/aqi_forecasting_model.pkl')
 from pmdarima import auto_arima
 import joblib
 
-
+# Specify which features to forecast (PM2.5, PM10, NO, etc.)
 features = ['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'SO2', 'CO', 'Ozone', 'WS', 'Temp']
 
 
