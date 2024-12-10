@@ -38,14 +38,9 @@ XGBoost
 Voting Regressor (ensemble of the above models)
 Metrics: Evaluated models using R², MSE, and visual comparisons.
 Recursive Forecasting: Predicted AQI for future days iteratively using lagged values.
-Project Structure
-├── data/                # Dataset used for training and testing
-├── models/              # Saved machine learning models
-├── frontend/            # JavaScript-based web interface
-├── notebooks/           # Jupyter notebooks for EDA and modeling
-├── app.py               # Backend server code (Flask or FastAPI)
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
+
+
+
 Results
 Achieved an R² score of 0.85 for the ensemble model on test data.
 Predictive model trends align with observed patterns, ensuring reliable AQI forecasting.
