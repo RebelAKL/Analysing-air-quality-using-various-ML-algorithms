@@ -13,7 +13,7 @@ scaler = joblib.load("scaler.pkl")
 
 FEATURES = [
     "PM2.5", "PM10", "NO", "NO2", "NOx", "NH3", "SO2", "CO", 
-    "benzene", "toluene", "RH", "WS", "WD", "SR", "BP", "AT"
+    "Benzene", "Toluene", "RH", "WS", "WD", "SR", "BP", "AT"
 ]
 
 
