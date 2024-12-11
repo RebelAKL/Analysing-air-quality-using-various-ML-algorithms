@@ -18,8 +18,8 @@ FEATURES = [
 
 
 default_values = {
-    "benzene": 0.1, 
-    "toluene": 0.2,  
+    "Benzene": 0.1, 
+    "Toluene": 0.2,  
 }
 
 
@@ -65,13 +65,14 @@ elif choice == "Predict Next Days":
         "NH3": [5] * num_days,
         "SO2": [3] * num_days,
         "CO": [0.9] * num_days,
-        "benzene": [default_values["benzene"]] * num_days,
-        "toluene": [default_values["toluene"]] * num_days,
+        "Benzene": [default_values["Benzene"]] * num_days,
+        "toluene": [default_values["Toluene"]] * num_days,
         "RH": [60] * num_days,
         "WS": [3.5] * num_days,
         "WD": [180] * num_days,
         "SR": [800] * num_days,
         "BP": [1012] * num_days,
+        "Ozone":[10]*num_days,
         "AT": [25] * num_days
     })
 
