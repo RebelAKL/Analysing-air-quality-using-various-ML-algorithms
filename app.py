@@ -12,8 +12,8 @@ scaler = joblib.load("scaler.pkl")
 
 
 FEATURES = [
-    "PM2.5", "PM10", "NO", "NO2", "NOx", "NH3", "SO2", "CO", 
-    "Benzene", "Toluene", "RH", "WS", "WD", "SR", "BP", "AT","Ozone"
+    "PM2.5", "PM10", "NO", "NO2", "NOx", "NH3", "SO2", "CO","Ozone",
+    "Benzene", "Toluene", "RH", "WS", "WD", "SR", "BP", "AT"
 ]
 
 
@@ -65,14 +65,14 @@ elif choice == "Predict Next Days":
         "NH3": [5] * num_days,
         "SO2": [3] * num_days,
         "CO": [0.9] * num_days,
+        "Ozone":[10]*num_days,
         "Benzene": [default_values["Benzene"]] * num_days,
-        "toluene": [default_values["Toluene"]] * num_days,
+        "Toluene": [default_values["Toluene"]] * num_days,
         "RH": [60] * num_days,
         "WS": [3.5] * num_days,
         "WD": [180] * num_days,
         "SR": [800] * num_days,
         "BP": [1012] * num_days,
-        "Ozone":[10]*num_days,
         "AT": [25] * num_days
     })
 
