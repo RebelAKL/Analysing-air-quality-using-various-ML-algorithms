@@ -14,3 +14,5 @@ prophet
 werkzeug
 streamlit
 pydeck
+folium
+streamlit-folium
