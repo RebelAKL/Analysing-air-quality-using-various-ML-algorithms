@@ -12,3 +12,5 @@ tensorflow
 seaborn
 prophet
 werkzeug
+streamlit
+pydeck
