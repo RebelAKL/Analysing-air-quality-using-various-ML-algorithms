@@ -19,6 +19,8 @@ The AQI Forecasting and Prediction project is designed to analyze air quality pa
 3. **Visualization:**
    - Displays individual pollutant AQI contributions.
    - Presents forecasted AQI trends in tabular and graphical formats for better analysis.
+   - Feature importance plot highlights the contribution of each pollutant to the AQI.
+   - SHAP analysis provides insights into how changes in individual pollutants affect AQI.
 
 4. **Interactive Streamlit Application:**
    - A web-based interface to facilitate easy interaction and data visualization.
@@ -35,6 +37,8 @@ The AQI Forecasting and Prediction project is designed to analyze air quality pa
    - **Numpy:** For numerical computations.
    - **Scikit-learn:** For data preprocessing and machine learning model implementation.
    - **XGBoost:** For gradient boosting modeling.
+   - **SHAP (SHapley Additive exPlanations):** For model interpretability and feature importance analysis.
+   - **Matplotlib & Seaborn:** For plotting and visualizations.
    - **Joblib:** For saving and loading machine learning models and scalers.
 
 3. **Machine Learning Models:**
@@ -77,6 +81,8 @@ The AQI Forecasting and Prediction project is designed to analyze air quality pa
 - Displays the predicted AQI (model) and calculated AQI (manual).
 - Provides a forecast for AQI trends in the next 7 days.
 - Outputs individual pollutant AQI contributions for better understanding.
+- **Feature Importance Plot:** Visualizes how much each pollutant contributes to the AQI prediction.
+- **SHAP Analysis:** Explains how changes in individual pollutant levels impact AQI, providing actionable insights.
 
 ---
 
@@ -85,7 +91,7 @@ The AQI Forecasting and Prediction project is designed to analyze air quality pa
 - **Features:**
   - Pollutants: PM2.5, PM10, NO, NO2, NOx, NH3, SO2, CO, Benzene, Toluene, Ozone.
   - Meteorological parameters: RH (Relative Humidity), WS (Wind Speed), WD (Wind Direction), SR (Solar Radiation), BP (Barometric Pressure), AT (Ambient Temperature).
-- **Size:** Dailly data from Anand Vihar station Delhi from 1/01/2024 to 10/12/2024
+- **Size:** Dailly data from Anand Vihar station Delhi from 1/01/2024 to 10/12/2024.
 
 ---
 
@@ -96,6 +102,8 @@ The AQI Forecasting and Prediction project is designed to analyze air quality pa
    - Manual AQI calculation accommodates missing values by considering only available pollutants.
 3. **Prediction Consistency:**
    - Ensured correct scaling and feature alignment for reliable predictions.
+4. **Feature Importance and SHAP Analysis:**
+   - Provided detailed plots to visualize and interpret the influence of each feature on AQI prediction.
 
 ---
 
