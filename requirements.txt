@@ -16,3 +16,4 @@ streamlit
 pydeck
 folium
 streamlit-folium
+shap
