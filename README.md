@@ -81,11 +81,11 @@ The AQI Forecasting and Prediction project is designed to analyze air quality pa
 ---
 
 ### **Dataset**
-- **Source:** CCR providied 24hr step data of Ananad Vihar station Delhi from 1/01/2024 tp 10/12/2024
+- **Source:** Central Control Room for Air Quality Management
 - **Features:**
   - Pollutants: PM2.5, PM10, NO, NO2, NOx, NH3, SO2, CO, Benzene, Toluene, Ozone.
   - Meteorological parameters: RH (Relative Humidity), WS (Wind Speed), WD (Wind Direction), SR (Solar Radiation), BP (Barometric Pressure), AT (Ambient Temperature).
-- **Size:** Over 1000 entries recorded every 8 hours for one year.
+- **Size:** Dailly data from Anand Vihar station Delhi from 1/01/2024 to 10/12/2024
 
 ---
 
